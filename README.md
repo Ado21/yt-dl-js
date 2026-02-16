@@ -122,9 +122,9 @@ yt-dl-js/
 <h2 align="center"><span style="color:#FF4500;">Uso CLI</span></h2>
 
 ```bash
-yt-dl-js <URL> [opciones]          # Descargar por URL
-yt-dl-js <titulo> [opciones]       # Buscar y descargar por titulo
-yt-dl-js --search "query"          # Buscar videos en YouTube
+npx yt-dl-js <URL> [opciones]          # Descargar por URL
+npx yt-dl-js <titulo> [opciones]       # Buscar y descargar por titulo
+npx yt-dl-js --search "query"          # Buscar videos en YouTube
 ```
 
 ### Opciones disponibles
@@ -149,43 +149,43 @@ yt-dl-js --search "query"          # Buscar videos en YouTube
 
 ```bash
 # Descargar video en mejor calidad
-yt-dl-js "https://youtube.com/watch?v=dQw4w9WgXcQ"
+npx yt-dl-js "https://youtube.com/watch?v=dQw4w9WgXcQ"
 
 # Descargar solo audio (MP3)
-yt-dl-js "https://youtube.com/watch?v=dQw4w9WgXcQ" -x
-yt-dl-js "https://youtube.com/watch?v=dQw4w9WgXcQ" --audio
+npx yt-dl-js "https://youtube.com/watch?v=dQw4w9WgXcQ" -x
+npx yt-dl-js "https://youtube.com/watch?v=dQw4w9WgXcQ" --audio
 
 # Descargar playlist completa como audio
-yt-dl-js "https://youtube.com/playlist?list=PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI" -x
+npx yt-dl-js "https://youtube.com/playlist?list=PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI" -x
 
 # Ver informacion del video sin descargar
-yt-dl-js "https://youtube.com/watch?v=dQw4w9WgXcQ" -i
+npx yt-dl-js "https://youtube.com/watch?v=dQw4w9WgXcQ" -i
 
 # Obtener solo la URL directa de descarga (sin descargar)
-yt-dl-js "https://youtube.com/watch?v=dQw4w9WgXcQ" -u
+npx yt-dl-js "https://youtube.com/watch?v=dQw4w9WgXcQ" -u
 
 # Obtener URL directa de audio
-yt-dl-js "https://youtube.com/watch?v=dQw4w9WgXcQ" -u --audio
+npx yt-dl-js "https://youtube.com/watch?v=dQw4w9WgXcQ" -u --audio
 
 # Buscar videos por titulo
-yt-dl-js --search "lofi hip hop"
+npx yt-dl-js --search "lofi hip hop"
 
 # Buscar y descargar audio directamente por titulo (auto-deteccion)
-yt-dl-js "Never Gonna Give You Up" -x
+npx yt-dl-js "Never Gonna Give You Up" -x
 
 # Buscar y obtener URL directa
-yt-dl-js "Never Gonna Give You Up" -u
+npx yt-dl-js "Never Gonna Give You Up" -u
 
 # Descargar con calidad maxima en directorio personalizado
-yt-dl-js "https://youtube.com/watch?v=dQw4w9WgXcQ" -x -q 0 -o ./musica
+npx yt-dl-js "https://youtube.com/watch?v=dQw4w9WgXcQ" -x -q 0 -o ./musica
 
 # Modo verbose para depuracion
-yt-dl-js "https://youtube.com/watch?v=dQw4w9WgXcQ" -v
+npx yt-dl-js "https://youtube.com/watch?v=dQw4w9WgXcQ" -v
 ```
 
 ---
 
-<h2 align="center"><span style="color:#32CD32;">Ejemplos de Uso (API)</span></h2>
+<h2 align="center"><span style="color:#32CD32;">Ejemplos de Uso (Módulo)</span></h2>
 
 ### 1) Descarga basica de video
 

@@ -1,10 +1,10 @@
 {
-  "name": "yt-dlp-js",
+  "name": "yt-dl-js",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
   "bin": {
-    "yt-dlp-js": "./cli.js"
+    "yt-dl-js": "./cli.js"
   },
   "exports": {
     ".": "./index.js"
